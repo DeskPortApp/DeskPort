@@ -1,0 +1,10 @@
+{
+    "app_name": "DeskPort",
+    "author": "DeskPort App",
+    "main_module": "src/main/python/main.py",
+    "dev_host": "https://google.com",
+    "dev_mode": true,
+    "version": "1.0.0",
+    "binding": "PySide6",
+    "hidden_imports": []
+}
