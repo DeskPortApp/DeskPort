@@ -57,13 +57,13 @@ Here are the tools you will need to run DeskPort on your computer depending on t
 
 #### Windows
 1. Install Python 3.8.x from [here](https://www.python.org/downloads/release/python-3810/).
-2. Install Pyinstaller v5.13.0 by running the following command in your terminal:
-```bash
-pip install pyinstaller==5.13.0
-```
-3. Install PPG v1.0.3 by running the following command in your terminal:
+2. Install PPG v1.0.3 by running the following command in your terminal:
 ```bash
 pip install ppg==1.0.3
+```
+3. Install Pyinstaller v5.13.0 by running the following command in your terminal:
+```bash
+pip install pyinstaller==5.13.0
 ```
 4. Install [Visual C++ Redistributable for Visual Studio 2012 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=30679) from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30679). *This is required for the execution of DeskPort applications on Windows.
 
