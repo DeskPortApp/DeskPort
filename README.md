@@ -72,24 +72,24 @@ pip install pyinstaller==5.13.0
 ```bash
 sudo apt-get install python3.8 python3.8-dev
 ```
-2. Install Pyinstaller v5.13.0 by running the following command in your terminal:
-```bash
-pip install pyinstaller==5.13.0
-```
-3. Install PPG v1.0.3 by running the following command in your terminal:
+2. Install PPG v1.0.3 by running the following command in your terminal:
 ```bash
 pip install ppg==1.0.3
+```
+3. Install Pyinstaller v5.13.0 by running the following command in your terminal:
+```bash
+pip install pyinstaller==5.13.0
 ```
 
 #### macOS
 1. Install Python 3.8.x From [here](https://www.python.org/downloads/release/python-3810/).
-2. Install Pyinstaller v5.13.0 by running the following command in your terminal:
-```bash
-pip install pyinstaller==5.13.0
-```
-3. Install PPG v1.0.3 by running the following command in your terminal:
+2. Install PPG v1.0.3 by running the following command in your terminal:
 ```bash
 pip install ppg==1.0.3
+```
+3. Install Pyinstaller v5.13.0 by running the following command in your terminal:
+```bash
+pip install pyinstaller==5.13.0
 ```
 
 ### Install the bindings
