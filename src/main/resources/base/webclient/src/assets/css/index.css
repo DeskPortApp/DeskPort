@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full;
+  overflow: hidden;
+}
+.max-width-150 {
+  max-width: 150px;
+}
+input[type="text"]:valid {
+  color: green;
+}
+
+input[type="text"]:invalid {
+  color: red;
+}
+.animate__animated.animate__fadeInRight {
+  --animate-duration: .3s;
+}
