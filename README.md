@@ -117,6 +117,12 @@ This error occurs when the Visual C++ Redistributable for Visual Studio 2012 Upd
 #### FileNotFoundError: Could not find api-ms-win-crt-multibyte-l1-1-0.dll on your PATH.
 This error occurs when the Windows 10 SDK is not installed. To fix this issue, install the Visual Studio Community from [here](https://visualstudio.microsoft.com/es/) and use Visual Studio Installer to download and install Windows 10 SDK.
 
+**still not working?** try this:
+Add downlevel folder to path before using pyinstaller or adding the downlevel folders to path in env variables
+
+```bash
+set PATH=%PATH%;C:\Windows\System32\downlevel; 
+```
 
 #### ModuleNotFoundError: No module named < binding >
 This error occurs when the bindings for the desired framework are not installed. To fix this issue, install the bindings for the desired framework. For more information, see [Install the bindings](#install-the-bindings).
