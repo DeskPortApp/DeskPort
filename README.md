@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#">
-  <img src="https://ik.imagekit.io/kummiktgaiq/Deskport/svgviewer-png-output_aArqbhGzM.png?updatedAt=1691488620054" alt="Deskport Logo" width="50%">
+  <img src="https://ik.imagekit.io/kummiktgaiq/Deskport/svgviewer-png-output_aArqbhGzM.png?updatedAt=1691488620054" alt="Deskport Logo" style="max-width: 100%;background: white;padding: 10px;">
   </a>
 </p>
 
