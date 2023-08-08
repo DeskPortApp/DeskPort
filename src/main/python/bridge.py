@@ -40,8 +40,10 @@ def build_url(model: URLModel):
     # create folder in desktop
     engine = PPGEngine(dict(model), template_path, output_path, True)
     engine.copy_with_filtering()
-    engine.compile_app()
-    #
+    result = engine.compile_app() # returns (bool, str)
+
+    if result[0] is False:
+        return JSONResponse(status_code=400, content={"message": result[1]})
 
     output_path = output_path.replace("\\", "/")
     return JSONResponse(status_code=200, content={"message": f"App ported successfully in {output_path}"})

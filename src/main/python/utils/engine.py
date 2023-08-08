@@ -2,6 +2,10 @@ import os
 from os.path import join
 from utils.fs import FileSystem
 import subprocess
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 
 fs = FileSystem()
@@ -55,7 +59,18 @@ class PPGEngine:
             "app_url": self.settings["appUrl"] if self.settings["appUrl"] else "https://www.google.com"
         }
 
-        fs.copy_folder(self.template_path, self.output_path)
+        try:
+            fs.copy_folder(self.template_path, self.output_path)
+        except FileNotFoundError as e:
+            logger.error(f"Error al copiar la carpeta: {str(e)}")
+            pass
+        finally:
+            current_folder = os.path.dirname(os.path.abspath(__file__))
+            parent_folder = os.path.dirname(current_folder)
+            project_template_path = os.path.join(parent_folder, "project_template")
+            logger.info(f"production project_template_path: {project_template_path}")
+            fs.copy_folder(project_template_path, self.output_path)
+
 
         for file in self.files_to_filter:
             with open(file, 'r') as f:
@@ -71,7 +86,20 @@ class PPGEngine:
         """
             Compile project in other folder with ppg
         """
-        self.run_command_in_new_terminal(f"c: && cd {self.output_path} && conda activate deskport && ppg freeze --debug && exit")
+        # check if python is installed
+        if os.system("python --version") != 0:
+            return (False, "Python is not installed")
+
+        if os.system("pyinstaller --version") != 0:
+            return (False, "Pyinstaller is not installed")
+
+        if os.system("ppg version") != 0:
+            return (False, "PPG is not installed")
+
+        # todo: debug flag should be passed by webclient in the future
+        self.run_command_in_new_terminal(f"c: && cd {self.output_path} && ppg freeze --debug && exit")
+
+        return (True, "")
 
 
     def build_nsis(self):

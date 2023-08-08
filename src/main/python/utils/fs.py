@@ -33,4 +33,5 @@ class FileSystem:
             shutil.copytree(source_folder, destination_folder)
             print("Carpeta copiada con éxito.")
         except Exception as e:
-            print("Error al copiar la carpeta:", str(e))
+            pass
+        
