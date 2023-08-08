@@ -11,7 +11,7 @@
 <p align="center">
   Convert your Web Apps and WebGL Games to cross-platform desktop with Python
   <br>
-  <a href="#docs"><strong>Explore Deskport docs »</strong></a>
+  <a href="#getting-started"><strong>Getting Started »</strong></a>
   <br>
 </p>
 
