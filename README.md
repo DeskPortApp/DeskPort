@@ -124,3 +124,4 @@ This error occurs when the bindings for the desired framework are not installed.
 - [Jose Paz](https://github.com/Ty6Way)
 
 ## Copyright and license
+Code and documentation copyright 2023–2022 the DeskPort Code released under the MIT License. Docs released under Creative Commons.
