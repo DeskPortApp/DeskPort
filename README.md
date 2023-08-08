@@ -118,6 +118,7 @@ This error occurs when the Visual C++ Redistributable for Visual Studio 2012 Upd
 This error occurs when the Windows 10 SDK is not installed. To fix this issue, install the Visual Studio Community from [here](https://visualstudio.microsoft.com/es/) and use Visual Studio Installer to download and install Windows 10 SDK.
 
 **still not working?** try this:
+
 Add downlevel folder to path before using pyinstaller or adding the downlevel folders to path in env variables
 
 ```bash
