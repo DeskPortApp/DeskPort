@@ -43,8 +43,7 @@ DeskPort's IDE allows the creation of web applications using cutting-edge techno
 ![GitHub licence](	https://img.shields.io/github/license/DeskPortApp/DeskPort)
 
 ## Getting started
-
-A continuación se las herramientas necesarias para poder ejecutar DeskPort en su computadora dependiendo del sistema operativo que utilice.
+Here are the tools you will need to run DeskPort on your computer depending on the operating system you use.
 
 ### You will need
 
