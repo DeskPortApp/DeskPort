@@ -105,6 +105,7 @@ Deskport requires the installation of the bindings for the desired framework. Th
 Here are some common issues that you may encounter when using DeskPort.
 
 ### Windows
+
 #### FileNotFoundError: Could not find msvcr110.dll on your PATH
 This error occurs when the Visual C++ Redistributable for Visual Studio 2012 Update 4 is not installed. To fix this issue, install the Visual C++ Redistributable for Visual Studio 2012 Update 4 from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30679).
 
@@ -112,6 +113,10 @@ This error occurs when the Visual C++ Redistributable for Visual Studio 2012 Upd
 1. Go to system32 folder
 2. Search for msvcr*.dll
 3. Sometimes msvcr110.dll is there but with some other name like msvcr110d.dll or msvcr110_clr0400.dll try copying it and renaming it to msvcr110.dll
+
+#### FileNotFoundError: Could not find api-ms-win-crt-multibyte-l1-1-0.dll on your PATH.
+This error occurs when the Windows 10 SDK is not installed. To fix this issue, install the Visual Studio Community from [here](https://visualstudio.microsoft.com/es/) and use Visual Studio Installer to download and install Windows 10 SDK.
+
 
 #### ModuleNotFoundError: No module named < binding >
 This error occurs when the bindings for the desired framework are not installed. To fix this issue, install the bindings for the desired framework. For more information, see [Install the bindings](#install-the-bindings).
